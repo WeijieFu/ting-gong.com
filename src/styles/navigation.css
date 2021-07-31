@@ -1,0 +1,25 @@
+.navigation {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  font-size: 1rem;
+  z-index: 999;
+}
+
+.navigation__item {
+  margin: 1rem 2rem;
+}
+
+.navigation__current {
+  flex: 1;
+  /* font-weight: 800; */
+}
+.navigation__about,
+.navigation__title {
+  transition: color 0.4s;
+}
+.navigation__about:hover,
+.navigation__title:hover {
+  color: #ddd;
+  cursor: pointer;
+}

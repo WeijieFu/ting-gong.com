@@ -1,0 +1,79 @@
+.works {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5rem 2rem 2rem 2rem;
+  overflow: hidden;
+}
+.works__row {
+  display: flex;
+}
+.works__year {
+  color: #bbb;
+  font-weight: 100;
+  font-size: 0.75rem;
+}
+.works__col {
+  /* width: 15vw; */
+}
+.works__year {
+  position: fixed;
+}
+
+.works__project {
+  width: 12vw;
+  height: 26vh;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+  position: fixed;
+}
+
+.works__project__image {
+  width: 12vw;
+  height: 26vh;
+  object-fit: cover;
+  transition: transform 1s;
+}
+
+.works__project__image:hover {
+  transform: scale(1.2);
+}
+.works__project__title__wrapper {
+  position: fixed;
+
+  overflow: hidden;
+  height: 6vh;
+  /* width: 100%; */
+  text-align: end;
+}
+.works__project__title {
+  font-size: 4vh;
+  font-family: "Cinzel Decorative", cursive;
+  /* opacity: 0; */
+  transform: translate(0, 6vh);
+  cursor: pointer;
+}
+.works__project__location__wrapper {
+  position: fixed;
+  bottom: 1rem;
+  left: 2rem;
+  overflow: hidden;
+  height: 3vh;
+}
+.works__project__location {
+  transform: translate(0, -2vh);
+  font-size: 2vh;
+}
+.works__toggle {
+  position: fixed;
+  right: 2rem;
+  top: 4.9rem;
+  cursor: pointer;
+  transform-origin: center;
+  transition: 0.3s;
+  z-index: 999;
+}
+.works__toggle--vertical {
+  transform: rotate(90deg);
+}
